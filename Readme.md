@@ -12,6 +12,11 @@ principal author: Michael Ossmann <mike@ossmann.com>
 Information on HackRF and purchasing HackRF: https://greatscottgadgets.com/hackrf/
 
 --------------------
+# Installation (After installing libusb devel packages)
+cmake ../ -G "Unix Makefiles" -DCMAKE_LEGACY_CYGWIN_WIN32= -DFFTW_LIBRARY=/lib/
+move libusb.h in usr\include\libusb-1.0 to usr\include\
+make
+make install
 
 # Documentation
 
