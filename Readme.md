@@ -14,8 +14,11 @@ Information on HackRF and purchasing HackRF: https://greatscottgadgets.com/hackr
 --------------------
 # Installation (After installing libusb devel packages)
 `cmake ../ -G "Unix Makefiles" -DCMAKE_LEGACY_CYGWIN_WIN32= -DFFTW_LIBRARY=/lib/`
+
 move libusb.h in usr\include\libusb-1.0 to usr\include\
+
 `make`
+
 `make install`
 
 # Documentation
